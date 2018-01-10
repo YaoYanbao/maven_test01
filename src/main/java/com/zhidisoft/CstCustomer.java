@@ -25,7 +25,9 @@ public class CstCustomer {
      * 构造方法
      * @return
      */
-    public CstCustomer(){}
+    public CstCustomer(){
+
+    }
     @Id
     @Column(name = "cust_id")
     public long getCustId() {
@@ -143,6 +145,7 @@ public class CstCustomer {
         if (custLinkman != null ? !custLinkman.equals(that.custLinkman) : that.custLinkman != null) return false;
         if (custPhone != null ? !custPhone.equals(that.custPhone) : that.custPhone != null) return false;
         if (custMobile != null ? !custMobile.equals(that.custMobile) : that.custMobile != null) return false;
+
 
         return true;
     }
